@@ -8,7 +8,7 @@ const OPTIONS = Object.fromEntries(
     (envVarName) => {
       const envVarValue = process.env[envVarName]
       if (!envVarValue) {
-        throw new Error(`You must supply a ${envVarName} environment variable`)
+Yy        throw new Error(`You must supply a ${envVarName} environment variable`)
       }
       return [envVarName, envVarValue]
     }
